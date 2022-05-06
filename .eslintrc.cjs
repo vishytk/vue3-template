@@ -9,6 +9,13 @@ module.exports = {
     '@vue/eslint-config-typescript/recommended',
     '@vue/eslint-config-prettier',
   ],
+  parserOptions: {
+    ecmaVersion: 2021,
+    sourceType: 'module',
+  },
+  rules: {
+    'vue/multi-word-component-names': 0, // disable this rule just for pages
+  },
   env: {
     'vue/setup-compiler-macros': true,
   },
