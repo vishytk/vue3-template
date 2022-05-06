@@ -1,0 +1,12 @@
+html * {
+  font-family: 'Inter var' !important;
+  font-feature-settings: 'zero', 'cv01', 'cv02', 'cv03', 'cv04', 'cv08', 'cv09';
+}
+
+body {
+  @apply min-h-screen;
+  @apply bg-gray-50;
+  text-rendering: optimizeLegibility;
+  @apply antialiased grayscale;
+  @apply leading-normal;
+}
