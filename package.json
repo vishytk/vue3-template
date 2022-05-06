@@ -11,7 +11,12 @@
     "typecheck": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format:check": "prettier -c .",
-    "format": "prettier -c -w ."
+    "format": "prettier -c -w .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts}": "npm run lint",
+    "*.{vue,ts,js,css,md}": "npm run format"
   },
   "dependencies": {
     "pinia": "^2.0.13",
@@ -31,7 +36,9 @@
     "eslint": "^8.5.0",
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-vue": "^8.2.0",
+    "husky": "^7.0.4",
     "jsdom": "^19.0.0",
+    "lint-staged": "^12.4.1",
     "prettier": "^2.5.1",
     "start-server-and-test": "^1.14.0",
     "typescript": "~4.6.3",
