@@ -1,4 +1,3 @@
-/* eslint-env node */
 require('@rushstack/eslint-patch/modern-module-resolution')
 
 module.exports = {
@@ -13,10 +12,10 @@ module.exports = {
     ecmaVersion: 2021,
     sourceType: 'module',
   },
-  rules: {
-    'vue/multi-word-component-names': 0, // disable this rule just for pages
-  },
   env: {
+    browser: true,
+    node: true,
+    es2021: true,
     'vue/setup-compiler-macros': true,
   },
   overrides: [
