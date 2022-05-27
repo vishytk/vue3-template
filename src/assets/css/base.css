@@ -7,6 +7,6 @@ body {
   @apply min-h-screen;
   @apply bg-gray-50;
   text-rendering: optimizeLegibility;
-  @apply antialiased grayscale;
+  @apply antialiased;
   @apply leading-normal;
 }
