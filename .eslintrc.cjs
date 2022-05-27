@@ -12,6 +12,9 @@ module.exports = {
     ecmaVersion: 2021,
     sourceType: 'module',
   },
+  rules: {
+    'vue/multi-word-component-names': 0, // disable this rule for pages
+  },
   env: {
     browser: true,
     node: true,
