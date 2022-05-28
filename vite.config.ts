@@ -4,6 +4,7 @@ import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
 import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
+import AutoImport from 'unplugin-auto-import/vite'
 
 export default defineConfig({
   plugins: [
@@ -16,6 +17,18 @@ export default defineConfig({
       // auto import and register vue and markdown components
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       dts: 'src/components.d.ts',
+    }),
+    AutoImport({
+      imports: [
+        'vue',
+        'vue-router',
+        'vue/macros',
+        '@vueuse/head',
+        '@vueuse/core',
+      ],
+      dts: 'src/auto-imports.d.ts',
+      dirs: ['src/composables', 'src/store'],
+      vueTemplate: true,
     }),
   ],
   resolve: {
