@@ -26,6 +26,6 @@
       "vite-plugin-vue-layouts/client"
     ]
   },
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "include": ["src/**/*"],
   "exclude": ["dist", "node_modules", "cypress", "src/**/__tests__/*"]
 }
