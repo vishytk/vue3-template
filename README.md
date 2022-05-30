@@ -1,6 +1,6 @@
 # vue3-template
 
-This template should help get you started developing with Vue 3 in Vite.
+Custom Vue 3 (Vite based) starter template.
 
 ## Recommended IDE Setup
 
@@ -17,43 +17,24 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
    2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
 2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
-## Customize configuration
+## Features
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
 
-## Project Setup
+- 🗒 TypeScript support
 
-```sh
-npm install
-```
+- 🍍 [Pinia State Management](https://pinia.esm.dev/)
 
-### Compile and Hot-Reload for Development
+- 📁 [File based routing](https://github.com/hannoeru/vite-plugin-pages) - './src/pages'
 
-```sh
-npm run dev
-```
+- 📑 [Layout system](https://github.com/JohnCampionJr/vite-plugin-vue-layouts) - './src/layouts'
 
-### Type-Check, Compile and Minify for Production
+- 📦 [Components auto importing](https://github.com/antfu/unplugin-vue-components) - './src/components'
 
-```sh
-npm run build
-```
+- 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+- 📲 [PWA support](https://github.com/antfu/vite-plugin-pwa)
 
-```sh
-npm run test:unit
-```
+- 🎨 [TailwindCSS](https://tailwindcss.com)
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```sh
-npm run build
-npm run test:e2e # or `npm run test:e2e:ci` for headless testing
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- ⚙️ Unit Testing with [Vitest](https://github.com/vitest-dev/vitest), E2E Testing with [Cypress](https://cypress.io/) on [GitHub Actions](https://github.com/features/actions)
